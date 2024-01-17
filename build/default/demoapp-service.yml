@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: demoapp
+  labels: {}
+  annotations: {}
+spec:
+  ports:
+    - name: "80"
+      port: 80
+  selector:
+    app: demoapp
+  type: ClusterIP
